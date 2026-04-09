@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import char1 from "./assets/char1.png";
 import char2 from "./assets/char2.png";
 import char3 from "./assets/char3.png";
-import bgVideo from "./assets/main1.mp4";
+//import bgVideo from "./assets/main1.mp4";
 import icon1 from "./assets/icon1.png";
 import icon2 from "./assets/icon2.png";
 import icon3 from "./assets/icon3.png";
@@ -103,8 +103,8 @@ export default function AboutMe() {
 
 return (
     <div id="menu-screen">
-      <video src={bgVideo} autoPlay loop muted playsInline />
-      
+      {/* <video src={bgVideo} autoPlay loop muted playsInline /> */}
+      <video src="/assets/main1.mp4" autoPlay loop muted playsInline />
       {/* Capa de fondo oscuro al revelar */}
       {revealed && <div key={`dim-${active}`} className="sc-dim" />}
 
